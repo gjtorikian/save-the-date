@@ -34,12 +34,11 @@
           <div class="rectangle">
             <!-- the navigation links -->
             <ul id="navigation" class="nav">
-              <li class="hidden-phone"><a data-menu="home" href="#home">Home</a></li>
-              <li class="hidden-phone"><a data-menu="story" href="#story">Our Story</a></li>
-              <li class="hidden-phone"><a data-menu="details" href="#details">Details</a></li>
-              <li><a data-menu="directions" href="#directions">Directions</a></li>
-              <li class="hidden-phone hidden-tablet"><a data-menu="photos" href="#photos">Photos</a></li>
-              <li class=""><a data-menu="rsvp" href="#rsvp-form">RSVP</a></li>
+              <li class="hidden-phone"><a data-localize="story" href="#story">Our Story</a></li>
+              <li class="hidden-phone"><a data-localize="details" href="#details">Details</a></li>
+              <li><a data-localize="directions" href="#directions">Directions</a></li>
+              <li class="hidden-phone hidden-tablet"><a data-localize="photos" href="#photos">Photos</a></li>
+              <li class=""><a data-localize="rsvp" href="#rsvp-form">RSVP</a></li>
               <li class="lang"><a href="#" onclick="localize('us')">English</a></li>
               <li class="lang"><a href="#" onclick="localize('mx')">Espa&ntilde;ol</a></li>
             </ul>
@@ -56,7 +55,7 @@
               <div class="span12">
                 <div class="purple ribbon-wrapper">
                   <div class="ribbon-front">
-                    <h1 class="page-header">The Story</h1>
+                    <h1 class="page-header" data-localize="story">Our Story</h1>
                   </div>
                   <div class="ribbon-edge-topleft"></div>
                   <div class="ribbon-edge-topright"></div>
@@ -68,7 +67,7 @@
                   <div class="span3">
                   </div>
                   <div class="span6">
-                    <p>Five years ago, Mar&iacute;a was a very happy bunny living her beloved U.K., sipping pints,
+                    <p data-localize="story_long">Five years ago, Mar&iacute;a was a very happy bunny living her beloved U.K., sipping pints,
                     reading books, and jumping into puddles with her newly discovered wellies. Meanwhile,
                     Garen was travelling the world, discovering Mexican coffee and drinking Danish beer. The two
                     met on the advice of a magpie in Edinburgh, and have been together since.</p>
@@ -87,7 +86,7 @@
               <div class="span12">
                 <div class="purple ribbon-wrapper">
                   <div class="ribbon-front">
-                    <h1 class="page-header">Details</h1>
+                    <h1 class="page-header" data-localize="details">Details</h1>
                   </div>
                   <div class="ribbon-edge-topleft"></div>
                   <div class="ribbon-edge-topright"></div>
@@ -110,7 +109,7 @@
               <div class="span12">
                 <div class="purple ribbon-wrapper">
                   <div class="ribbon-front">
-                    <h1 class="page-header">Directions</h1>
+                    <h1 class="page-header" data-localize="directions">Directions</h1>
                   </div>
                   <div class="ribbon-edge-topleft"></div>
                   <div class="ribbon-edge-topright"></div>
@@ -147,7 +146,7 @@
               <div class="span12">
                 <div class="purple ribbon-wrapper">
                   <div class="ribbon-front">
-                    <h1 class="page-header">Photos</h1>
+                    <h1 class="page-header" data-localize="photos">Photos</h1>
                   </div>
                   <div class="ribbon-edge-topleft"></div>
                   <div class="ribbon-edge-topright"></div>
@@ -191,7 +190,7 @@
               <div class="span12">
                 <div class="purple ribbon-wrapper">
                   <div class="ribbon-front">
-                    <h1 class="page-header">RSVP</h1>
+                    <h1 class="page-header" data-localize="rsvp">RSVP</h1>
                   </div>
                   <div class="ribbon-edge-topleft"></div>
                   <div class="ribbon-edge-topright"></div>
@@ -200,27 +199,25 @@
                   <div class="ribbon-back-right"></div>
                 </div>
                 <div id="rsvp-container" class="container">
-                  <p>Let us know if you're able to come, and what you'd prefet to eat!</p>
-
                   <!-- taken from: http://morning.am/tutorials/how-to-style-google-forms/ -->
                   <script type="text/javascript">var submitted=false;</script>
                   <iframe name="hidden_iframe" id="hidden_iframe"
                     style="display:none;" onload="if(submitted) rippleChange()"></iframe>
                   <form class="form-horizontal" action="https://docs.google.com/forms/d/1-ztUnsFaBWNQ7VUp76cjcQSmZFLIzh8f7X1nbIGipcs/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
                     <div class="control-group">
-                      <span class="help-block">Who are you?</span>
+                      <span class="help-block" data-localize="name_label">Who are you?</span>
                       <div class="controls">
                         <input type="text" name="entry.747065673" value="" class="ss-q-short" id="entry_747065673" dir="auto" required>
                       </div>
                     </div>
                     <div class="control-group">
-                      <span class="help-block">Are you able to come?</span>
+                      <span class="help-block" data-localize="coming_label">Are you able to come?</span>
                       <div class="controls">
-                        <label class="radio">
+                        <label class="radio" data-localize="coming_yes">
                         <input type="radio" name="entry.1410566373" value="Yes! I&#39;m excited!" id="group_1410566373_1" class="ss-q-radio" aria-label="Yes! I&#39;m excited!" required>
                         Yes! I&#39;m excited!
                         </label>
-                        <label class="radio">
+                        <label class="radio" data-localize="coming_no">
                         <input type="radio" name="entry.1410566373" value="No, I can&#39;t!" id="group_1410566373_2" class="ss-q-radio" aria-label="No, I can&#39;t!" required>
                         No, I can&#39;t!
                         </label>

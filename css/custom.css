@@ -134,6 +134,7 @@ div#wrapper {
 body { background: url("../img/bg.jpg") repeat; }
 h1, h2, h3, h4, h5, h6 { font-family:'LeagueGothicReg', Helvetica, Arial, sans-serif; color:#ffffff; text-transform:uppercase; font-weight:normal; }
 h1.page-header, #invitation h1 { margin-left: 10px; color:#fcca32; }
+h1.page-header { padding-top: 7px; }
 #invitation h1 { color:#656464;  }
 h1 { font-size:3em; margin:0; } 
 h2 { font-size:2.4em; }
@@ -415,11 +416,11 @@ footer a:hover { color:#2b2b2b; }
 }
  .purple .ribbon-front {
   background-color: #692746;  
-  height: 40px;
+  height: 45px;
   position: relative;
   left:-10px;
   z-index: 2;
-  width: 15%;
+  width: 25%;
 }
 
  .purple .ribbon-front,

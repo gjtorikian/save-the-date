@@ -5,16 +5,33 @@ function localize(lang) {
         mode:'map',
         language:lang,
         callback:function() {
-        	// menu l18n
-        	$("#navigation li a").each(function(i,el) {
-                var menuName = $(this).data("menu");
-
-                if (menuName !== undefined) {
-                  var translation = $.i18n.prop(menuName);
+            var translate = function(name, el) {
+                if (name !== undefined) {
+                  var translation = $.i18n.prop(name);
 
                   if (translation !== undefined)
                     $(el).text(translation);
                 } 
+            }
+
+        	$("#navigation li a").each(function(i,el) {
+                var name = $(this).data("localize");
+                translate(name, el);
+            });
+
+            $("h1.page-header").each(function(i,el) {
+                var name = $(this).data("localize");
+                translate(name, el);
+            });
+
+            $("p").each(function(i,el) {
+                var name = $(this).data("localize");
+                translate(name, el);
+            });
+
+            $("span").each(function(i,el) {
+                var name = $(this).data("localize");
+                translate(name, el);
             });
         }
     });
