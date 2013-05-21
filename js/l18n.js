@@ -1,4 +1,7 @@
 function localize(lang) {
+    $("#en-toggle").toggleClass("hiddenlang");
+    $("#mx-toggle").toggleClass("hiddenlang");
+
     $.i18n.properties({
         name:'site',
         path:'./l18n/',
