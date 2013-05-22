@@ -17,22 +17,7 @@ function localize(lang) {
                 } 
             }
 
-        	$("#navigation li a").each(function(i,el) {
-                var name = $(this).data("localize");
-                translate(name, el);
-            });
-
-            $("h1.page-header").each(function(i,el) {
-                var name = $(this).data("localize");
-                translate(name, el);
-            });
-
-            $("p").each(function(i,el) {
-                var name = $(this).data("localize");
-                translate(name, el);
-            });
-
-            $("span").each(function(i,el) {
+            $("#navigation li a, h1.page-header, span, p").each(function(i,el) {
                 var name = $(this).data("localize");
                 translate(name, el);
             });
