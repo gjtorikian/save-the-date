@@ -86,10 +86,10 @@ div#wrapper {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
 }
 .section#rsvp-form, .section#details, .section#photos {
-  background: url(../img/grey-fabric.png);
+  background: url(../img/blue-fabric.png);
 }
 .section#story, .section#directions, .section#portland {
-  background: url(../img/grey-fabric.png);
+  background: url(../img/blue-fabric.png);
 }
 
 
@@ -127,6 +127,12 @@ div#wrapper {
      url('../fonts/league-gothic-webfont.woff') format('woff'),
      url('../fonts/league-gothic-webfont.ttf') format('truetype'),
      url('../fonts/league-gothic-webfont.svg#LeagueGothicReg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gorey';
+    src: url('../fonts/gorey.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -181,12 +187,36 @@ background-color: rgba(255,255,255,0.6);
   
 }
 
-.invite {
-
+.row {
+  padding-top: 15px;
 }
-.main-photo {
+
+.photo {
   padding-left: 90px;
 }
+
+.main-photo {
+  max-width: 1170px;
+  padding-left: 90px;
+}
+
+p#story {
+  margin-top: 80px;
+  line-height: 30px;
+  font-size: 25px;
+  font-family: 'Gorey','Signika', Helvetica, Arial, sans-serif;
+}
+
+p.directions {
+  line-height: 30px;
+  font-size: 25px;
+  font-family: 'Gorey','Signika', Helvetica, Arial, sans-serif;
+}
+
+.story_holder {
+  margin-left: -45px;
+}
+
 #invitation {
   
 border-top: 8px solid #656464;
@@ -264,64 +294,17 @@ footer p {
 }
 footer a:hover { color:#2b2b2b; }
 
-
-/* Large desktop */
-@media (min-width: 1441px) {
-}
-@media (min-width: 1280px) and (max-width:1440px) {
-}
-
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-  .subhead h1 {
-    font-size: 35px;
-  }
-  .jumbotron{
-    padding-top: 41px;
-  }
-  #home {
-    margin-top: 521px;
-  } 
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-  body {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  h1,h2 {
-    text-align: center;
-  }
-  .jumbotron{
-    padding-top: 0px;
-    background: url(http://farm9.staticflickr.com/8523/8630102578_7ed92156c0_k.jpg) no-repeat fixed;
-  }
-  #home {
-    margin-top: 407px;
-  }
-  .subhead h1 {
-    font-size: 35px;
-  }
-}
- 
- 
-/* Landscape phones and down */
-@media (max-width: 480px) { }
-
 #navigation_container {
   margin: 0 auto;
-  width: 1170px;
+  width: 100%;
   z-index: 300;
   display: inline-block;
   height: 60px;
 }
 
+div.stuck #navigation_container{
+  width: 940px;
+}
 #navigation li {
     list-style: none;
     display: inline-table;
@@ -419,7 +402,7 @@ footer a:hover { color:#2b2b2b; }
   position: relative;
   left:-10px;
   z-index: 2;
-  width: 25%;
+  width: 30%;
 }
 
  .purple .ribbon-front,
@@ -516,4 +499,54 @@ label.error {
 
 ul#navigation li.hiddenlang {
   display: none;
+}
+
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+}
+
+/* Large desktop */
+@media (min-width: 1441px) {
+}
+@media (min-width: 1280px) and (max-width:1440px) {
+
+}
+
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+  .subhead h1 {
+    font-size: 35px;
+  }
+  .jumbotron{
+    padding-top: 41px;
+  }
+  #home {
+    margin-top: 521px;
+  } 
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h1,h2 {
+    text-align: center;
+  }
+  .jumbotron{
+    padding-top: 0px;
+  }
+  #home {
+    margin-top: 407px;
+  }
+  .subhead h1 {
+    font-size: 35px;
+  }
 }
