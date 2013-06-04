@@ -17,7 +17,7 @@ function localize(lang) {
                 } 
             }
 
-            $("#navigation li a, h1.page-header, span, p").each(function(i,el) {
+            $("#navigation li a, h1.page-header, span, p, button").each(function(i,el) {
                 var name = $(this).data("localize");
                 translate(name, el);
             });
